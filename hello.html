@@ -8,16 +8,16 @@
 
 <h1>Learn Javascript H1</h1>
 <p id="demo">My first paragraph</p>
-<button onclick="myfunction()">Click me!</button>
+<div id="myDiv">This is myDiv</div>
+<p><button onclick="myfunction()">Click me!</button></p>
 <script>
-    function myfunction() {
-        document.writeln(Date());
-    }
-a = 5;
-b = 6;
-c = a + b;
-console.log(c);
+<!--document.writeln("hello \world!!"); -->
+function myfunction(){
+    document.getElementById("demo").innerHTML="helloworld.";
+    document.getElementById("myDiv").innerHTML="how are you?";
+}
 </script>
 
+<p>text changes after click.</p>
 </body>
 </html>
