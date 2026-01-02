@@ -1,4 +1,4 @@
-// cars = ["Toyota","Honda","Nissan","Mazda","Suzuki"];
+cars = ["Toyota","Honda","Nissan","Mazda","Suzuki"];
 // //var i=2, len=cars.length;
 // //for (i=0;i<cars.length;i++) {
 // for (x in cars) {
@@ -12,7 +12,13 @@ var person ={
 }
 
 var txt = ""
-for (x in person){
-    txt = txt + person[x];
+var i = 0
+// for (x in person){
+//     txt = txt + person[x];
+// }
+
+while (cars[i]){
+    txt = txt + cars[i] + " "; 
+    i++;
 }
-console.log(txt);  
+console.log(txt);
