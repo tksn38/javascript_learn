@@ -1,6 +1,4 @@
 //字面量
-
-//a = 1
 var a = 1
 var b = 2
 // function myFunction(a,b) {

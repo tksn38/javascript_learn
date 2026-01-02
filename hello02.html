@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>hello02</title>
+</head>
+<body>
+<h1>hello02</h1>
+
+<div id="demo"></div>
+<p>IE不支持字面量</p>
+
+<script>
+let header = "header";
+let tags = ["apple","banana","chocolate"]
+
+let html = `<h2>${header}</h2><ul>`;
+for (const x of tags) {
+    html += `<li>${x}</li>`;
+}
+html += `</ul>`;
+document.getElementById("demo").innerHTML = html;
+</script>
+
+</body>
+</html>
