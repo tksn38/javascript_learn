@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello05</title>
+</head>
+<body>
+
+<script>
+var txt="";
+function message(){
+    try {
+        // alert("Welcome guest!");
+        aleert("Welcome guest!");
+    }
+    catch(err){
+        txt = "This page has a error!" + "\n";
+        txt += "Error Info:"+ err.message +"\n";
+        txt += "Press Any Botton to exit \n";
+        alert(txt);
+    }
+}
+</script>
+
+<!-- <button value="check the message" onclick=message()> Click me!</button> -->
+<input type="button" value="Check Info" onclick="message()" />
+
+</body>
+</html>
