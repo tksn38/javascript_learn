@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>hello11</title> 
+</head>
+<body>
+
+<p>以下内容是通过异步请求获取的：</p><hr>
+<p id="demo"></p>
+<script>
+var xhr = new XMLHttpRequest();
+ 
+xhr.onload = function () {
+    // 输出接收到的文字数据
+    document.getElementById("demo").innerHTML=xhr.responseText;
+    console.log(xhr.responseText);
+}
+ 
+xhr.onerror = function () {
+    document.getElementById("demo").innerHTML="请求出错";
+}
+ 
+// 发送异步 GET 请求
+xhr.open("GET", "sample.txt", true);
+xhr.send();
+</script>
+
+</body>
+</html>
