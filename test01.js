@@ -15,3 +15,6 @@ var person = {firstname:"John", lastname:"Doe"};
 //console.log(person,length,cars);
 console.log(16 + "Volvo");
 
+function myFunction(){
+    document.getElementById("demo").innerHTML="myFunction from test01."
+}
