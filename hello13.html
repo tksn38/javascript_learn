@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello13</title>
+</head>
+<body>
+<h1>Replace the "Microsoft" to "Runoob"</h1>
+<p id="demo">Microsoft</p>
+<button onclick="myFunction()">Click Me!</button>
+<script>
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML;
+    console.log(str);
+    var txt = str.replace(/Microsoft/i, "Runoob");
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
