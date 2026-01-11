@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello14</title>
+</head>
+<body>
+<h1>try, catch, finally</h1>
+<input type="button" value="ClickMe!" onclick="message()" />
+<script>
+var txt = "";
+function message() {
+    try {
+        //alert("Welcome guest!");   //OK
+        addlert("Welcome guest!"); //NGの場合、catch実施。
+    }
+    catch(err) {
+        txt = "The Page has errors. \n\n"
+        txt += "ErrorInfo:" + err.message + "\n\n";
+        txt += "Click to Continue. \n\n";
+        alert(txt);
+    }
+    finally {
+    document.write("Javascript Function Done!");
+    }
+}
+</script>
+</body>
+</html>
