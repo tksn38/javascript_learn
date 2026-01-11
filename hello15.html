@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello15.html</title>
+</head>
+<body>
+<p id="demo"></p>
+<p>use debugger to stop commit</p>
+
+<script>
+var x = 15 * 5
+document.getElementById("demo").innerHTML = "before debugger";
+debugger;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
